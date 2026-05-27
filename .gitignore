@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+*.log
+
+# Ignore large video files in the distribution folder
+dist/videos/**/*
+
+# Allow the directory structures and configurations to be tracked
+!dist/videos/
+!dist/videos/.htaccess
+!dist/videos/samples/
+!dist/videos/samples/**/*

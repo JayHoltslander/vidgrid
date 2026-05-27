@@ -1,0 +1,20 @@
+{
+  "name": "vidgrid",
+  "version": "1.0.0",
+  "description": "Minimal Multi-Player Video Grid",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.1"
+  },
+  "keywords": [
+    "video",
+    "grid",
+    "kiosk",
+    "minimal"
+  ],
+  "author": "",
+  "license": "MIT"
+}

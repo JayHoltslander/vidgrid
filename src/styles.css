@@ -1,0 +1,133 @@
+/* Reset and Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden; /* Prevent scrolls */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  transition: outline 0.15s ease;
+}
+
+
+
+/* Centered Grid Container */
+main.grid-container, .grid-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--container-padding, 8px) !important;
+  margin: 0 !important;
+}
+
+/* Video Players Grid */
+.players-grid {
+  display: grid;
+  gap: 8px; /* Clean separation gap */
+  justify-content: center;
+  align-content: center;
+}
+
+/* Individual Player Card */
+.player-card {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background-color: #1a1a1a;
+}
+
+/* Cursor Style Configurations */
+body.cursor-default .player-card { cursor: default; }
+body.cursor-default .video-wrapper.focused { cursor: default; }
+
+body.cursor-pointer .player-card { cursor: pointer; }
+body.cursor-pointer .video-wrapper.focused { cursor: pointer; }
+
+body.cursor-crosshair .player-card { cursor: crosshair; }
+body.cursor-crosshair .video-wrapper.focused { cursor: crosshair; }
+
+body.cursor-zoom .player-card { cursor: zoom-in; }
+body.cursor-zoom .video-wrapper.focused { cursor: zoom-out; }
+
+/* Legacy default (Grid = pointer, Focused = zoom-out) */
+body.cursor-legacy .player-card { cursor: pointer; }
+body.cursor-legacy .video-wrapper.focused { cursor: zoom-out; }
+
+body.disable-focus .player-card {
+  cursor: default !important;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* Smooth transition for centering & scaling */
+  transition: left 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+              top 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+              width 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+              height 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+              border-radius 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+              box-shadow 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: left, top, width, height, border-radius, box-shadow;
+}
+
+/* Video Sizing */
+.player-video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover; /* Fill the area beautifully */
+  background: transparent;
+}
+
+/* Minimal Error Placeholder */
+.player-error {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-align: center;
+  background: #050505;
+  color: #666;
+  font-size: 0.8rem;
+  border: 1px dashed #222;
+}
+
+/* Focus Backdrop Overlay */
+.focus-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+body.focus-active .focus-backdrop {
+  opacity: 1;
+  pointer-events: auto;
+}
