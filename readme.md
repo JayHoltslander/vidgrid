@@ -1,21 +1,25 @@
+![Logo](https://capsule-render.vercel.app/api?type=waving&height=300&color=gradient&customColorList=12&text=🎬%20VidGrid&section=header&fontAlign=50&fontAlignY=40&animation=fadeIn&fontSize=100&desc=Minimal,%20zero-UI%20multi-video%20playlist%20player&descAlignY=63&descSize=25)
+
 <div align="center">
-  <h1>🎬 VidGrid</h1>
-  <p><strong>A minimal, zero-UI multi-video player grid designed for digital signage and ambient loops.</strong></p>
-  
-  [![View Live Demo](https://img.shields.io/badge/View_Live_Demo-FF4B4B?style=for-the-badge&logo=html5&logoColor=white)](https://jayholtslander.github.io/vidgrid/)
-  
-  <br />
-  
   <p>
     <a href="#key-features">Features</a> •
     <a href="#quick-start">Quick Start</a> •
     <a href="#configuration-examples">Examples</a>
   </p>
+
+  <br />
+
+  [![](https://img.shields.io/badge/View_Live_Demo-0072ff?style=for-the-badge&logoColor=white)](https://jayholtslander.github.io/vidgrid/)
+  
 </div>
+
 
 <br />
 
-**VidGrid** is a lightweight browser application designed to autoplay multiple independent, randomly shuffled video playlists in a highly responsive grid. Optimized for digital signage, ambient rooms, and Raspberry Pi kiosks, VidGrid maintains custom aspect ratios and dynamically packs tiles to occupy 100% of the viewport with zero overflow or scrollbars.
+# VidGrid
+VidGrid is a lightweight browser application designed to autoplay multiple independent, randomly shuffled video playlists in a highly responsive grid. Optimized for digital signage, ambient rooms, and Raspberry Pi kiosks, VidGrid maintains custom aspect ratios and dynamically packs tiles to occupy 100% of the viewport with zero overflow or scrollbars.
+
+<img src="https://skillicons.dev/icons?i=html,js,css" />
 
 ## Common Use Cases
 
@@ -287,3 +291,5 @@ You are free to use, modify, and distribute this software in personal or commerc
 If you use VidGrid in your own projects, **I kindly ask that you provide a public credit** (such as a link back to this repository or a mention in your project's README/credits section) so that others can find and benefit from it as well!
 
 *(Note: The sample videos provided in the `samples/` directory are owned by The HAL Project and may be subject to their own respective copyright terms.)*
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&height=100&color=gradient&customColorList=12&section=footer&animation=fadeIn)
