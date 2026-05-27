@@ -10,7 +10,6 @@
   <br />
 
   [![](https://img.shields.io/badge/Demo_Video_Page-0072ff?style=for-the-badge&logoColor=white)](https://jayholtslander.github.io/vidgrid/)
-  
 </div>
 
 
@@ -292,5 +291,7 @@ You are free to use, modify, and distribute this software in personal or commerc
 If you use VidGrid in your own projects, **I kindly ask that you provide a public credit** (such as a link back to this repository or a mention in your project's README/credits section) so that others can find and benefit from it as well!
 
 *(Note: The sample videos provided in the `samples/` directory are owned by The HAL Project and may be subject to their own respective copyright terms.)*
+
+[![Sponsor](https://img.shields.io/badge/Tip_via_PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/jayholtslander)
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&height=100&color=gradient&customColorList=12&section=footer&animation=fadeIn)
