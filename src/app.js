@@ -42,10 +42,11 @@ async function discoverVideos() {
   
   // 1. Try to fetch static playlist.json first (used for static hosting like GitHub Pages)
   try {
-    let playlistResponse = await fetch('videos/playlist.json');
+    const cacheBuster = '?v=' + Date.now();
+    let playlistResponse = await fetch('videos/playlist.json' + cacheBuster);
     let playlistBase = 'videos/';
     if (!playlistResponse.ok) {
-      playlistResponse = await fetch('../videos/playlist.json');
+      playlistResponse = await fetch('../videos/playlist.json' + cacheBuster);
       playlistBase = '../videos/';
     }
     if (playlistResponse.ok) {
@@ -53,8 +54,7 @@ async function discoverVideos() {
       staticPlaylist.forEach(relPath => {
         discovered.push(playlistBase + relPath);
       });
-      state.globalPlaylist = discovered;
-      return;
+      return discovered;
     }
   } catch (err) {
     // Fail silently and fallback to HTML directory parsing
