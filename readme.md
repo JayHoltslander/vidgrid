@@ -9,7 +9,7 @@
 
   <br />
 
-  [![](https://img.shields.io/badge/View_Live_Demo-0072ff?style=for-the-badge&logoColor=white)](https://jayholtslander.github.io/vidgrid/)
+  [![](https://img.shields.io/badge/Demo_Video_Page-0072ff?style=for-the-badge&logoColor=white)](https://jayholtslander.github.io/vidgrid/)
   
 </div>
 
