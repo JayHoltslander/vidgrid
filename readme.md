@@ -1,6 +1,21 @@
-# VidGrid — Multi-Video Player Grid
+<div align="center">
+  <h1>🎬 VidGrid</h1>
+  <p><strong>A minimal, zero-UI multi-video player grid designed for digital signage and ambient loops.</strong></p>
+  
+  [![View Live Demo](https://img.shields.io/badge/View_Live_Demo-FF4B4B?style=for-the-badge&logo=html5&logoColor=white)](https://jayholtslander.github.io/vidgrid/)
+  
+  <br />
+  
+  <p>
+    <a href="#key-features">Features</a> •
+    <a href="#quick-start">Quick Start</a> •
+    <a href="#configuration-examples">Examples</a>
+  </p>
+</div>
 
-**VidGrid** is a lightweight, zero-UI browser application designed to autoplay multiple independent, randomly shuffled video playlists in a highly responsive grid. Optimized for digital signage, ambient loops, and Raspberry Pi kiosks, VidGrid maintains custom aspect ratios and dynamically packs tiles to occupy 100% of the viewport with zero overflow or scrollbars.
+<br />
+
+**VidGrid** is a lightweight browser application designed to autoplay multiple independent, randomly shuffled video playlists in a highly responsive grid. Optimized for digital signage, ambient rooms, and Raspberry Pi kiosks, VidGrid maintains custom aspect ratios and dynamically packs tiles to occupy 100% of the viewport with zero overflow or scrollbars.
 
 ## Common Use Cases
 
