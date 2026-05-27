@@ -23,11 +23,12 @@ VidGrid is a lightweight browser application designed to autoplay multiple indep
 
 ## Common Use Cases
 
+* **Desktop Screensaver**: Play your video playlists by feeding URL(s) to a compatible screensaver like [WebViewScreensaver for Mac](https://formulae.brew.sh/cask/webviewscreensaver).
+* **Prop Displays & Set Design**: Simulate complex computer consoles, sci-fi server stacks, command control centers, or diagnostic monitors for theater, film sets, and escape rooms.
 * **Digital Signage & Video Walls**: Create a seamless wall of synchronized or independent video displays.
 * **Ambient Rooms & Screensavers**: Play relaxing atmospheric loops or digital art installations on wall-mounted TVs.
 * **Hardware Kiosks**: Set up a dedicated Raspberry Pi loop player in museums, exhibition spaces, or retail displays.
 * **Multi-Stream Feeds**: Monitor multiple local camera streams or preview video folders simultaneously.
-* **Prop Displays & Set Design**: Simulate complex computer consoles, sci-fi server stacks, command control centers, or diagnostic monitors for theater, film sets, and escape rooms.
 
 ---
 
