@@ -106,19 +106,19 @@ Customize the player count, grid layout spacing, video aspect ratios, and card r
 ### Configuration Examples
 
 #### Default Configuration (6 players, 1:1 grid aspect, 48px gutter, 24px corners, transitions to 16:9 when focused):
-`https://jayholtslander.github.io/vidgrid/`
+[https://jayholtslander.github.io/vidgrid/](https://jayholtslander.github.io/vidgrid/)
 #### Edge-to-Edge full-screen zoom with borderless/padding-less focus:
-`https://jayholtslander.github.io/vidgrid/?focus-full=true`
+[https://jayholtslander.github.io/vidgrid/?focus-full=true](https://jayholtslander.github.io/vidgrid/?focus-full=true)
 #### Completely disabled focus (non-clickable grid with default cursors):
-`https://jayholtslander.github.io/vidgrid/?disable-focus=true`
+[https://jayholtslander.github.io/vidgrid/?disable-focus=true](https://jayholtslander.github.io/vidgrid/?disable-focus=true)
 #### Widescreen Cinematic Grid (24px spacing, 12px rounded corners):
-`https://jayholtslander.github.io/vidgrid/?aspect=16:9&gutter=24&corners=12`
+[https://jayholtslander.github.io/vidgrid/?aspect=16:9&gutter=24&corners=12](https://jayholtslander.github.io/vidgrid/?aspect=16:9&gutter=24&corners=12)
 #### Seamless Video Wall (9 Players, no gaps, sharp corners):
-`https://jayholtslander.github.io/vidgrid/?gutter=0&corners=0&videos=9`
+[https://jayholtslander.github.io/vidgrid/?gutter=0&corners=0&videos=9](https://jayholtslander.github.io/vidgrid/?gutter=0&corners=0&videos=9)
 #### Classic 4:3 TV Grid (4 Players, 16px gutter, sharp corners):
-`https://jayholtslander.github.io/vidgrid/?aspect=4:3&gutter=16&corners=0&videos=4`
+[https://jayholtslander.github.io/vidgrid/?aspect=4:3&gutter=16&corners=0&videos=4](https://jayholtslander.github.io/vidgrid/?aspect=4:3&gutter=16&corners=0&videos=4)
 #### Cinematic Grid with Focused Audio (4 Players, 16px gutter, unmuting enabled):
-`https://jayholtslander.github.io/vidgrid/?videos=4&aspect=16:9&gutter=16&unmuting=true`
+[https://jayholtslander.github.io/vidgrid/?videos=4&aspect=16:9&gutter=16&unmuting=true](https://jayholtslander.github.io/vidgrid/?videos=4&aspect=16:9&gutter=16&unmuting=true)
 
 
 ## Remote Web Server Deployment (Without Python)
