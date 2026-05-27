@@ -52,7 +52,8 @@ async function discoverVideos() {
     if (playlistResponse.ok) {
       const staticPlaylist = await playlistResponse.json();
       staticPlaylist.forEach(relPath => {
-        discovered.push(playlistBase + relPath);
+        const fileName = relPath.split('/').pop();
+        discovered.push({ name: fileName, url: playlistBase + relPath });
       });
       return discovered;
     }
