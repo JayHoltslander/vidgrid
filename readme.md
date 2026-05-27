@@ -8,8 +8,8 @@
   </p>
 
   <br />
-  
   [![](https://img.shields.io/badge/Demo_Video_Page-0072ff?style=for-the-badge&logoColor=white)](https://jayholtslander.github.io/vidgrid/)
+  [![Sponsor](https://img.shields.io/badge/Sponsor_via_PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/jayholtslander)
   <br><sub>(6 shuffled video players, 1:1 aspect ratio, rounded corners, with gutters)</sub>
 </div>
 
