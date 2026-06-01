@@ -790,19 +790,15 @@ document.addEventListener('DOMContentLoaded', async () => {
   });
 
 
-  // Throttled Resize listener using requestAnimationFrame to prevent layout thrashing
-  let resizeScheduled = false;
-  window.addEventListener('resize', () => {
-    if (!resizeScheduled) {
-      resizeScheduled = true;
-      requestAnimationFrame(() => {
-        resizeGrid();
-        resizeScheduled = false;
-      });
-    }
+  // Use ResizeObserver instead of window resize events to catch late-initializing webviews (like macOS Screensavers)
+  const resizeObserver = new ResizeObserver(() => {
+    requestAnimationFrame(() => {
+      resizeGrid();
+    });
   });
-  
-  // Initial size call
+  resizeObserver.observe(document.body);
+
+  // Initial layout calculation
   resizeGrid();
 
   // Schedule daily kiosk reload at 3:00 AM

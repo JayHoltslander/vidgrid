@@ -140,6 +140,11 @@ Customize the player count, grid layout spacing, video aspect ratios, and card r
 #### Cinematic Grid with Focused Audio (4 Players, 16px gutter, unmuting enabled):
 [https://jayholtslander.github.io/vidgrid/?videos=4&aspect=16:9&gutter=16&unmuting=true](https://jayholtslander.github.io/vidgrid/?videos=4&aspect=16:9&gutter=16&unmuting=true)
 
+> [!TIP]
+> **Filling Ultra-Wide Monitors:** VidGrid mathematically packs videos into the largest possible grid without cropping. If you are using an ultra-wide monitor (like a 32:9 gaming monitor) with 1:1 square videos, the default 6-player layout will leave black bars on the sides. To perfectly fill a 32:9 monitor edge-to-edge, use the "magic number" of **`?videos=14`**. This creates a perfect 7x2 grid that flawlessly matches the screen's aspect ratio!
+
+
+
 
 ## Remote Web Server Deployment (Without Python)
 
